@@ -12,8 +12,14 @@
             android:id="@+id/change1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="解冻腌制" />
+            android:layout_weight="1"
+            android:text="解冻" />
+        <Button
+            android:id="@+id/change3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="其它" />
 
         <Button
             android:id="@+id/change2"

@@ -17,8 +17,11 @@ public class MainActivity extends FragmentActivity
 
 	private Button button1 = null;
 	private Button button2 = null;
+	private Button button3 = null;
+	
 	private Fragment fragment1 = null;
 	private Fragment fragment2 = null;
+	private Fragment fragment3 = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -27,8 +30,11 @@ public class MainActivity extends FragmentActivity
 		setContentView(R.layout.activity_main);
 		button1 = (Button) findViewById(R.id.change1);
 		button2 = (Button) findViewById(R.id.change2);
+		button3 = (Button) findViewById(R.id.change3);
 		fragment1 = new Fregment1();
 		fragment2 = new Fragment2();
+		fragment3 = new Fregment3();
+		
 		replaceFragment(fragment1);
 		button1.setOnClickListener(new OnClickListener()
 		{
@@ -48,6 +54,15 @@ public class MainActivity extends FragmentActivity
 			public void onClick(View v)
 			{
 				replaceFragment(fragment2);
+			}
+		});
+		button3.setOnClickListener(new OnClickListener()
+		{
+
+			@Override
+			public void onClick(View v)
+			{
+				replaceFragment(fragment3);
 			}
 		});
 

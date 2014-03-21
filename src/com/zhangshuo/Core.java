@@ -191,11 +191,11 @@ public class Core
 			day2[i] = calendartemp2.get(calendartemp2.DAY_OF_MONTH);
 			hour2[i] = calendartemp2.get(calendartemp2.HOUR_OF_DAY);
 		}
-		// +24h
+		// +24h-4
 		for (int i = 0; i <= 5; i++)
 		{
 			calendartemp3.set(calendar.YEAR, month2[i], day2[i], hour2[i], 0);
-			calendartemp3.add(calendartemp3.HOUR_OF_DAY, 24);
+			calendartemp3.add(calendartemp3.HOUR_OF_DAY, 20);
 			month3[i] = calendartemp3.get(calendartemp2.MONTH);
 			day3[i] = calendartemp3.get(calendartemp3.DAY_OF_MONTH);
 			hour3[i] = calendartemp3.get(calendartemp3.HOUR_OF_DAY);
@@ -244,10 +244,10 @@ public class Core
 			hour2[0] = calendartemp2.get(calendartemp2.HOUR_OF_DAY);
 		
 			
-		// +48h
+		// +48h-12
 		
 			calendartemp3.set(calendar.YEAR, month2[0], day2[0], hour2[0], 0);
-			calendartemp3.add(calendartemp3.HOUR_OF_DAY, 48);
+			calendartemp3.add(calendartemp3.HOUR_OF_DAY, 36);
 			month3[0] = calendartemp3.get(calendartemp2.MONTH);
 			day3[0] = calendartemp3.get(calendartemp3.DAY_OF_MONTH);
 			hour3[0] = calendartemp3.get(calendartemp3.HOUR_OF_DAY);
@@ -301,14 +301,14 @@ public class Core
 			hour2[i] = calendartemp2.get(calendartemp2.HOUR_OF_DAY);
 		}
 			
-		// +72h ÍÁ¶¹Äà48
+		// +72h-24 ÍÁ¶¹Äà48
 		for (int i = 0; i <= 2; i++)
 		{
 			calendartemp3.set(calendar.YEAR, month2[i], day2[i], hour2[i], 0);
 			if(i==2)
 				calendartemp3.add(calendartemp2.HOUR_OF_DAY, 48);
 				else 
-					calendartemp3.add(calendartemp2.HOUR_OF_DAY, 72);
+					calendartemp3.add(calendartemp2.HOUR_OF_DAY, (72-24));
 			month3[i] = calendartemp3.get(calendartemp2.MONTH);
 			day3[i] = calendartemp3.get(calendartemp3.DAY_OF_MONTH);
 			hour3[i] = calendartemp3.get(calendartemp3.HOUR_OF_DAY);
@@ -362,14 +362,14 @@ public class Core
 			hour2[i] = calendartemp2.get(calendartemp2.HOUR_OF_DAY);
 		}
 			
-		// Ãæ±ý48h ´ÐÓÍ72
+		// Ãæ±ý48h-12 ´ÐÓÍ72-36
 		for (int i = 0; i <= 1; i++)
 		{
 			calendartemp3.set(calendar.YEAR, month2[i], day2[i], hour2[i], 0);
 			if(i==1)
-				calendartemp3.add(calendartemp2.HOUR_OF_DAY, 72);
+				calendartemp3.add(calendartemp2.HOUR_OF_DAY, 36);
 				else 
-					calendartemp3.add(calendartemp2.HOUR_OF_DAY, 48);
+					calendartemp3.add(calendartemp2.HOUR_OF_DAY, 36);
 			month3[i] = calendartemp3.get(calendartemp2.MONTH);
 			day3[i] = calendartemp3.get(calendartemp3.DAY_OF_MONTH);
 			hour3[i] = calendartemp3.get(calendartemp3.HOUR_OF_DAY);

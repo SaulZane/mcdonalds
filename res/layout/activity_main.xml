@@ -13,20 +13,23 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="解冻" />
+            android:text="解冻"
+            android:background="@drawable/button_putong" />
         <Button
             android:id="@+id/change3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="其它" />
+            android:text="其它" 
+            android:background="@drawable/button_putong"/>
 
         <Button
             android:id="@+id/change2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
              android:layout_weight="1"
-            android:text="关于" />
+            android:text="关于" 
+            android:background="@drawable/button_putong"/>
     </LinearLayout>
 
     <FrameLayout

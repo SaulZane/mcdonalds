@@ -79,6 +79,7 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/textView4"
         android:onClick="okclick"
+        android:background="@drawable/button_press"
         android:text="生成" />
 
     <TextView

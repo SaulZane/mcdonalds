@@ -5,6 +5,7 @@ import com.zhangshuo.R;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTabHost;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -34,6 +35,7 @@ public class MainActivity extends FragmentActivity
 		fragment1 = new Fregment1();
 		fragment2 = new Fragment2();
 		fragment3 = new Fregment3();
+		button1.setBackgroundResource(R.drawable.button_press);
 		
 		replaceFragment(fragment1);
 		button1.setOnClickListener(new OnClickListener()
@@ -43,16 +45,22 @@ public class MainActivity extends FragmentActivity
 			public void onClick(View arg0)
 			{
 
+				button1.setBackgroundResource(R.drawable.button_press);
+				button2.setBackgroundResource(R.drawable.button_putong);
+				button3.setBackgroundResource(R.drawable.button_putong);
 				replaceFragment(fragment1);
 
 			}
 		});
 		button2.setOnClickListener(new OnClickListener()
 		{
-
+			
 			@Override
 			public void onClick(View v)
 			{
+				button2.setBackgroundResource(R.drawable.button_press);
+				button1.setBackgroundResource(R.drawable.button_putong);
+				button3.setBackgroundResource(R.drawable.button_putong);
 				replaceFragment(fragment2);
 			}
 		});
@@ -62,6 +70,9 @@ public class MainActivity extends FragmentActivity
 			@Override
 			public void onClick(View v)
 			{
+				button3.setBackgroundResource(R.drawable.button_press);
+				button1.setBackgroundResource(R.drawable.button_putong);
+				button2.setBackgroundResource(R.drawable.button_putong);
 				replaceFragment(fragment3);
 			}
 		});
